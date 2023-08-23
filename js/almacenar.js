@@ -19,3 +19,8 @@ botonAgregar.addEventListener('click', function(){
     }
     inputText.value ='';
 });
+
+botonLimpiar.addEventListener('click', function(){
+    displayText.innerHTML= "";
+    localStorage.removeItem("items")
+   })
