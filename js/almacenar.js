@@ -2,7 +2,12 @@ const inputText = document.getElementById('item');
 const botonAgregar = document.getElementById('agregar');
 const displayText = document.getElementById('contenedor');
 const items = localStorage.getItem('items');
-const listado = [];
+const listado = ;
+if (items) {
+    for(let i = 0; i < listado.length;i++){
+        displayText.innerHTML += `<li>${listado[i]}</li>`;
+    }
+}
 
 botonAgregar.addEventListener('click', function(){
     const valorInput = inputText.value;
